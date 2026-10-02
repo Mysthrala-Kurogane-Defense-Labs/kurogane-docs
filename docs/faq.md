@@ -1,13 +1,21 @@
-# FAQ
+# Frequently asked questions
 
-## Is this the Kurogane Hub source code?
+## Can a company use these guides without buying a product?
 
-No. This is public technical documentation for the public technical ecosystem around Kurogane Hub.
+Yes. Start with a bounded inventory, access review and recovery questions. Keep completed evidence private and agree any live technical work separately.
 
-## Does Kurogane Hub automatically satisfy NIS2 or METI requirements?
+## Can I install Kurogane Hub from here?
 
-No automatic compliance is claimed. Kurogane Hub is designed to support visibility, evidence, operational risk reduction, and alignment work.
+No public installer, receiver API or supported production topology is provided. The Hub core remains private. Deployment pages explain questions to ask, not verified installation procedures.
 
-## Can experts review the private core?
+## What can I actually run?
 
-Selected auditors, partners, investors, and security researchers may request controlled technical review access.
+The SDK validates public events and prints dry-run previews. Labs generates four finite synthetic scenarios and analyzes local event files. Optional Node-RED shows a builtin synthetic flow. No example controls equipment.
+
+## Do these repositories prove a certification or compliance?
+
+No. Applicability, implementation and evidence need separate review. NIS2 scope and METI's IT supply-chain scheme are different questions; see the respective pages.
+
+## Where should I report incorrect information?
+
+Open a documentation issue with the exact passage, authoritative source and checked date. For sensitive findings use the [private disclosure process](https://github.com/Mysthrala-Kurogane-Defense-Labs/kurogane-security-model/blob/main/disclosure-policy.md). For services, contact [MKDL](https://mkdl.jp/).

@@ -1,9 +1,18 @@
-# METI Alignment
+# METI supply-chain guidance: distinguish IT and OT scope
 
-This document describes meti alignment for the public technical ecosystem around Kurogane Hub.
+## Verified reference
 
-Kurogane Hub is intended to help industrial SMEs and micro-SMEs reason about OT cybersecurity, industrial monitoring, operational risk, data sovereignty, PLC and SCADA visibility, and cyber-physical systems without unnecessary complexity.
+The [METI SCS evaluation scheme page](https://www.meti.go.jp/policy/netsecurity/scs.html) includes the construction policy published on 27 March 2026. Its stated target is supply-chain IT systems, including cloud services; OT control systems and products are outside the direct evaluation target. It must not be presented as an OT certification or as a universal legal obligation.
 
-This material is high-level public technical documentation. It does not publish production core logic, sensitive detection logic, customer deployment details, internal endpoints, credentials, or exploitable implementation details.
+The source distinguishes the planned evaluation levels and implementation process. Do not infer that this repository or Kurogane has been evaluated under the scheme.
 
-For regulatory topics such as NIS2 and METI, the goal is to support alignment and evidence gathering. This documentation does not assert automatic legal compliance.
+## Review steps
+
+1. Ask which Japanese customer requirement, contract or scheme version is actually requested.
+2. Identify the evaluated organization and IT scope, keeping OT dependencies visible but separately classified.
+3. Obtain the current criteria and evaluation route from the official scheme; record version, date and reviewer.
+4. Map requested evidence to owners and dated records. Mark missing evidence instead of substituting a product description.
+
+## Output and limit
+
+A source-backed requirements register, scope decision and evidence gaps. A Spanish industrial company's applicability cannot be inferred from the word METI. These public guides are preparation material, not assessment results, a recognized certificate or proof of private-product controls. See [primary references](references.md).
