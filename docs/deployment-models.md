@@ -1,9 +1,26 @@
-# Deployment Models
+# Choosing a deployment model
 
-This document describes deployment models for the public technical ecosystem around Kurogane Hub.
+This is a provider-evaluation guide. No installer or supported private Hub topology is published here.
 
-Kurogane Hub is intended to help industrial SMEs and micro-SMEs reason about OT cybersecurity, industrial monitoring, operational risk, data sovereignty, PLC and SCADA visibility, and cyber-physical systems without unnecessary complexity.
+## Inputs
 
-This material is high-level public technical documentation. It does not publish production core logic, sensitive detection logic, customer deployment details, internal endpoints, credentials, or exploitable implementation details.
+List required data, outage tolerance, support responsibility, connectivity limits, retention needs and constraints on transfers. Confirm these with operations and IT before comparing products.
 
-For regulatory topics such as NIS2 and METI, the goal is to support alignment and evidence gathering. This documentation does not assert automatic legal compliance.
+| Question | On-premise | Hybrid |
+| --- | --- | --- |
+| Who operates the local host? | Named local or contracted owner | Still needs a local owner |
+| What happens without Internet? | Test local dependencies | Test local buffering and deferred processing |
+| Where can data leave the site? | Inventory updates, support and backups too | Document each external flow |
+| Who restores service? | Local restore procedure and evidence | Local plus remote-component recovery |
+| What evidence is needed? | Version, access review, restore test | Same plus transfer and remote-service evidence |
+
+## Decision steps
+
+1. Draw proposed components and data flows without secrets.
+2. Assign responsibility for identity, updates, backups, monitoring and incident response.
+3. Ask the provider to demonstrate outage, restart, restore and access revocation in a separate test environment.
+4. Record unresolved assumptions and the consequence of each failure.
+
+## Output
+
+A selected model with reasons, named owners, required evidence and acceptance criteria. Hosting locally does not by itself establish security or data sovereignty. Follow [on-premise](on-premise-deployment.md) or [hybrid](hybrid-deployment.md) questions before procurement.

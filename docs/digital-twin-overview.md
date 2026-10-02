@@ -1,9 +1,17 @@
-# Digital Twin Overview
+# Asset model and digital twin terminology
 
-This document describes digital twin overview for the public technical ecosystem around Kurogane Hub.
+The public examples contain an asset inventory and invented events. They do not demonstrate a synchronized representation of a physical plant and should be described as a **synthetic asset model**.
 
-Kurogane Hub is intended to help industrial SMEs and micro-SMEs reason about OT cybersecurity, industrial monitoring, operational risk, data sovereignty, PLC and SCADA visibility, and cyber-physical systems without unnecessary complexity.
+## Questions before using a stronger claim
 
-This material is high-level public technical documentation. It does not publish production core logic, sensitive detection logic, customer deployment details, internal endpoints, credentials, or exploitable implementation details.
+- Which physical system and operating conditions are represented?
+- Which approved sources update the model, at what intervals and with what quality limits?
+- How are stale, missing or contradictory observations identified?
+- What behavior is modeled and independently validated?
+- What decisions may use the model, and who accepts its limitations?
 
-For regulatory topics such as NIS2 and METI, the goal is to support alignment and evidence gathering. This documentation does not assert automatic legal compliance.
+## Practical output
+
+Start with the [asset register](plant-modeling.md). For every proposed model capability, record the source, validation method, timestamp policy and unresolved limitations. Separate a diagram, an inventory, live telemetry and a validated process model in descriptions.
+
+The Python lab is deterministic and fixed; it is not a physics simulator or a real-time replica. Running it provides no evidence about a physical asset's safety or performance.

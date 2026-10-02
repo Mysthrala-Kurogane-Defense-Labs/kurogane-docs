@@ -1,9 +1,24 @@
-# Operational Risk
+# Prioritizing operational risk
 
-This document describes operational risk for the public technical ecosystem around Kurogane Hub.
+## Input
 
-Kurogane Hub is intended to help industrial SMEs and micro-SMEs reason about OT cybersecurity, industrial monitoring, operational risk, data sovereignty, PLC and SCADA visibility, and cyber-physical systems without unnecessary complexity.
+Choose the bounded workflow from [onboarding](sme-onboarding.md). Identify what a loss of availability, incorrect information or unauthorized change would affect: people, equipment, delivery, quality and recovery.
 
-This material is high-level public technical documentation. It does not publish production core logic, sensitive detection logic, customer deployment details, internal endpoints, credentials, or exploitable implementation details.
+## Record a scenario
 
-For regulatory topics such as NIS2 and METI, the goal is to support alignment and evidence gathering. This documentation does not assert automatic legal compliance.
+| Field | Synthetic example |
+| --- | --- |
+| Dependency and owner | Engineering workstation; maintenance lead |
+| Failure or misuse | Support account remains enabled after service |
+| Consequence to validate | Unauthorized change could interrupt the line |
+| Existing evidence | Account list exists; approval history unknown |
+| Next action | Review support accounts with owner and provider |
+| Completion evidence | Dated review and tested revocation |
+
+## Prioritize
+
+Discuss consequence and uncertainty with the operational owner. Prefer resolving a critical unknown to assigning a precise-looking score without data. Record existing controls, evidence age and recovery dependence. Assign an action owner and review date.
+
+## Output and limit
+
+Keep a short action register linked to evidence. A security observation is not a validated safety consequence, and correlation between an alarm and downtime is not causality. This exercise supports prioritization; it does not replace process-safety engineering or certify risk reduction. [NIST OT guidance](references.md) supplies broader context.
